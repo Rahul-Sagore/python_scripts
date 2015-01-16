@@ -8,13 +8,11 @@ The aim of making this script is to find the product list and their correspondin
 
 ####Instructions
 	
-	- To make this script run properly, you must install BeautifulSoup library first:
-	
+	* To make this script run properly, you must install BeautifulSoup library first:
 		`sudo pip install beautifulsoup`
-	- Now after cloning or downloading this script, open terminal & move to the cloned folder
-	
+	* Now after cloning or downloading this script, open terminal & move to the cloned folder
 		example : `cd /path/to/the/clone/repo/`
-	- Now run the script using `python junglee_scapping.py`
+	* Now run the script using `python junglee_scrapping.py`
 
 ####Task completed : 
   - Fetched product list successfully
