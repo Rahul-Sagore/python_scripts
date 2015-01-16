@@ -6,14 +6,26 @@ Contains scripts written in python. (For automation, web scrapping)
 
 The aim of making this script is to find the product list and their corresponding prices from www.junglee.com. After running this script user will be prompted to enter the search term, then the script will search the product on junglee.com and will output all the products with their prices. I have used Python2.7.6 for web scrapping, 're' python libray for pattern searching and beautifulsoup Python package for parsing HTML documents.
 
+
+####Directory structure
+
+python_scripts
+|
+|---junglee_scrapping/
+|	|
+|	|---junglee_scrapping.py
+|
+|---README.md
+
+
 ####Instructions
 	
 - To make this script run properly, you must install BeautifulSoup library first:
 
 		`sudo pip install beautifulsoup`
 		
-- Now after cloning or downloading this script, open terminal & move to the cloned folder
-example : `cd /path/to/the/clone/repo/`
+- Now after cloning or downloading this script, locate the junglee_scrapping.py on terminal: 
+		`cd /path/to/the/clone/repo/script`
 
 - Now run the script using `python junglee_scrapping.py`
 
