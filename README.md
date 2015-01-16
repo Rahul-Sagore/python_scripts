@@ -4,7 +4,7 @@ Contains scripts written in python. (For automation, web scrapping)
 
 ###Script 1# : Junglee_scrapping
 
-To run this script successfully, you must install BeautifulSoup library:
+To make this script run properly, you must install BeautifulSoup library first:
 
 command : sudo pip install BeautyfulSoup
 
