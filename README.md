@@ -11,7 +11,7 @@ command : sudo pip install BeautyfulSoup
 ####Task completed : 
   - Fetched product list successfully
   - Fetched product price successfully
-  - Integrated of product list and price list into dictionary
+  - Integrated product list and price list into dictionary
 
 ####Need to be done :
   - Taking user input as a search term
