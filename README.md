@@ -12,15 +12,10 @@ The aim of making this script is to find the product list and their correspondin
 python_scripts
 
 |
-
 |---junglee_scrapping/
-
 |	|
-
 |	|---junglee_scrapping.py
-
 |
-
 |---README.md
 
 
