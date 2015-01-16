@@ -10,13 +10,13 @@ The aim of making this script is to find the product list and their correspondin
 ####Directory structure
 
 python_scripts
-
+<br/>
+|<br/>
+|---junglee_scrapping/<br/>
+|	|<br/>
+|	|---junglee_scrapping.py<br/>
 |
-|---junglee_scrapping/
-|	|
-|	|---junglee_scrapping.py
-|
-|---README.md
+|---README.md<br/>
 
 
 ####Instructions
