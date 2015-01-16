@@ -10,7 +10,8 @@ command : sudo pip install BeautyfulSoup
 
 ####Task completed : 
   - Fetched product list successfully
+  - Fetched product price successfully
 
 ####Need to be done :
-  - Fetching product price
+  - Integration of product and price
   - Suggesting cheap product
