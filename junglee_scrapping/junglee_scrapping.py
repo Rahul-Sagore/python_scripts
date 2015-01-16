@@ -1,4 +1,4 @@
-# Importing python library for fetching Internet resource
+# Importing python library for fetching Internet resource and pattern searching
 import urllib2
 import re
 from BeautifulSoup import BeautifulSoup
@@ -11,11 +11,11 @@ html = response.read()
 
 #Custom function for finding particular tag with specific attribute
 
-def findText(tag, attr, val, soup):
+def get_product(tag, attr, val, soup):
     ''' Accepts 4 parameters : tag - html tag name, attr - html tag attr
         , val - value of attribute, soup - containing html response. Returns the list of matching
         patterns'''
-    #fetching required tag using beautifulSoup Method
+    #fetching tag using beautifulSoup Method
     titles = soup.findAll(tag, attrs={attr : val})
     
     #Fetching content of the tag using regular expression
@@ -23,21 +23,34 @@ def findText(tag, attr, val, soup):
     
     return str(match)
 
+#Custom function for getting price
+
+def get_price(price_text):
+    match = re.findall(r'</span[^>]*?>(.*?)</span>', str(price_text))
+    return str(match)
+
+def str_to_list(string):
+    return string.split("',")
+
 #Creating beautifulsoup object
 soup = BeautifulSoup(html)
 
 #Calling fuction for finding text in html
-products= findText('a', "class", "title", soup)
-product_price = find_price('span', "class", "price", soup)
+products= get_product('a', "class", "title", soup)
+
+product_price = soup.findAll('span', attrs={'class':'price'})
+prices = get_price(product_price) #for removing innerHTml
 
 #Converting string into product list
-product_list = products.split("',")
+product_list = str_to_list(products)
+price_list = str_to_list(prices)
 
-for each_product in product_list:
-    print "Product Name : \n", each_product[2:], "\n"
+# Mapping of product_list and price_list into dictionary
+prod_dic = dict(zip(product_list, price_list))
 
-
-
+# Finally printing the values
+for k, v in prod_dic.items():
+    print "Product Name : \n", k[2:], "\nPrice : ", v[10:], "\n"
 
     
 
