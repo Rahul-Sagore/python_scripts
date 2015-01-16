@@ -8,6 +8,8 @@ To make this script run properly, you must install BeautifulSoup library first:
 
 command : sudo pip install BeautyfulSoup
 
+Note : This script is written in python-2.7.6
+
 ####Task completed : 
   - Fetched product list successfully
   - Fetched product price successfully
