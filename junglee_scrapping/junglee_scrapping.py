@@ -3,14 +3,21 @@ import urllib2
 import re
 from BeautifulSoup import BeautifulSoup
 
-url = "http://www.junglee.com/mn/search/junglee/ref=nb_sb_is\
-s_cat_00000_3?url=search-alias%3Daps&field-keywords=asus+fonepad+7&rush=n"
+print "Welcome Junglee.com scrapping!\n"
+usr_input = raw_input("Enter your search term : ")
 
-response = urllib2.urlopen(url)
+inp = usr_input.split()
+format_input = "+".join(inp)
+
+url2 = "http://www.junglee.com/mn/search/junglee/ref=nb_sb_is\
+s_cat_00000_3?url=search-alias%3Daps&field-keywords="+format_input+"&rush=n"
+
+
+#Grabbing Html from the url
+response = urllib2.urlopen(url2)
 html = response.read()
 
 #Custom function for finding particular tag with specific attribute
-
 def get_product(tag, attr, val, soup):
     ''' Accepts 4 parameters : tag - html tag name, attr - html tag attr
         , val - value of attribute, soup - containing html response. Returns the list of matching
@@ -24,7 +31,6 @@ def get_product(tag, attr, val, soup):
     return str(match)
 
 #Custom function for getting price
-
 def get_price(price_text):
     match = re.findall(r'</span[^>]*?>(.*?)</span>', str(price_text))
     return str(match)
