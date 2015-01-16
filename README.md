@@ -9,6 +9,7 @@ The aim of making this script is to find the product list and their correspondin
 ####Instructions
 	
 - To make this script run properly, you must install BeautifulSoup library first:
+
 		`sudo pip install beautifulsoup`
 		
 - Now after cloning or downloading this script, open terminal & move to the cloned folder
