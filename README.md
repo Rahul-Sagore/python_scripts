@@ -11,12 +11,10 @@ The aim of making this script is to find the product list and their correspondin
 
 python_scripts
 <pre><br/>
-|<br/>
 |---junglee_scrapping/<br/>
-|	|<br/>
 |	|---junglee_scrapping.py<br/>
-|<br/>
 |---README.md<br/><pre>
+
 
 
 ####Instructions
