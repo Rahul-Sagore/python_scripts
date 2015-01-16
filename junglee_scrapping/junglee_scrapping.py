@@ -3,8 +3,9 @@ import urllib2
 import re
 from BeautifulSoup import BeautifulSoup
 
-print "Welcome Junglee.com scrapping!\n"
+print "Welcome to Junglee.com web scrapping!\n"
 usr_input = raw_input("Enter your search term : ")
+print "processing ..."
 
 inp = usr_input.split()
 format_input = "+".join(inp)
