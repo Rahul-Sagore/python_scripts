@@ -21,7 +21,7 @@ example : `cd /path/to/the/clone/repo/`
   - Fetched product list successfully
   - Fetched product price successfully
   - Integrated product list and price list into dictionary
+  - Taking user input as a search term
 
 ####Need to be done :
-  - Taking user input as a search term
   - Suggesting cheap product
